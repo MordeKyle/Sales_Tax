@@ -1,10 +1,23 @@
-//                                                   *Change Log*
-//     01/06/2014     Repository Creation.
-//                    salePriceTB == Sale Price Text box created.
-//                    amountOfPurchase label created.  
-//                    stateSalesTaxLabel and stateSalesTaxOutput created.
-//                    countySalesTaxLabel and countySalesTaxOutput created.
-//                    totalOfPurchaseLabel and totalOfPurchaseOutput created.
-//                    calculateButton created.
-//                    clearButton created.
-//                    exitButton created.
+//     *Change Log*
+//      01/07/2014
+//      calculateButton event handler created;
+//        Exception handler.
+//        Added decimal variables.
+//        Parse decimal variable salePrice(user input).
+//        calculations added.
+//        displaying of outputs added.
+//      clearButton event handler created;
+//        clearing of all labels and textbox added.
+//      exitButton event handler created;
+//        closing of program added.
+//      01/06/2014     
+//      Repository Creation.
+//      salePriceTB == Sale Price Text box created.
+//      amountOfPurchase label created.  
+//      stateSalesTaxLabel and stateSalesTaxOutput created.
+//      countySalesTaxLabel and countySalesTaxOutput created.
+//      totalOfPurchaseLabel and totalOfPurchaseOutput created.
+//      calculateButton created.
+//      clearButton created.
+//      exitButton created.
+//      strings STATE_SALES_TAX_PERCENT and COUNTY_SALES_TAX_PERCENT created.

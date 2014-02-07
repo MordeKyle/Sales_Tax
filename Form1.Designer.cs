@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.salePriceTB = new System.Windows.Forms.TextBox();
             this.amountOfPurchaseLabel = new System.Windows.Forms.Label();
             this.countySalesTaxLabel = new System.Windows.Forms.Label();
@@ -137,6 +138,7 @@
             this.clearButton.TabIndex = 10;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // exitButton
             // 
@@ -146,6 +148,7 @@
             this.exitButton.TabIndex = 11;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // calculateButton
             // 
@@ -155,6 +158,7 @@
             this.calculateButton.TabIndex = 12;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // mainForm
             // 
@@ -174,6 +178,7 @@
             this.Controls.Add(this.countySalesTaxLabel);
             this.Controls.Add(this.amountOfPurchaseLabel);
             this.Controls.Add(this.salePriceTB);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainForm";
             this.Text = "Sales Tax Calculator";
             this.ResumeLayout(false);

@@ -17,6 +17,17 @@ using System.Windows.Forms;
 //             tax, and the total amount of the purchase.
 //
 //     *Change Log*
+//      01/07/2014
+//      calculateButton event handler created;
+//        Exception handler.
+//        Added decimal variables.
+//        Parse decimal variable salePrice(user input).
+//        calculations added.
+//        displaying of outputs added.
+//      clearButton event handler created;
+//        clearing of all labels and textbox added.
+//      exitButton event handler created;
+//        closing of program added.
 //      01/06/2014     
 //      Repository Creation.
 //      salePriceTB == Sale Price Text box created.
@@ -51,6 +62,58 @@ namespace Sales_Tax
 
         private void label2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                decimal salePrice;
+                decimal stateTax;
+                decimal countyTax;
+                decimal totalTax;
+                decimal totalPrice;
+
+                //pulling the user defined data and assigning it to a decimal string:
+                salePrice = decimal.Parse(salePriceTB.Text);
+
+                //calculations:
+                stateTax = salePrice * STATE_SALES_TAX_PERCENT;
+                countyTax = salePrice * COUNTY_SALES_TAX_PERCENT;
+                totalTax = countyTax + stateTax;
+                totalPrice = totalTax + salePrice;
+
+                //displaying the data:
+                stateSalesTaxOutput.Text = stateTax.ToString("c");
+                countySalesTaxOutput.Text = countyTax.ToString("c");
+                totalSalesTaxOutput.Text = totalTax.ToString("c");
+                totalOfPurchaseOutput.Text = totalPrice.ToString("c");
+
+            }
+            catch
+            {
+                MessageBox.Show("Oops, something went wrong.");
+
+            }
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            //clearing all of the inputs and outputs:
+            salePriceTB.Text = "";
+            stateSalesTaxOutput.Text = "";
+            countySalesTaxOutput.Text = "";
+            totalSalesTaxOutput.Text = "";
+            totalOfPurchaseOutput.Text = "";
+
+
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            //exiting the program:
+            this.Close();
 
         }
     }
