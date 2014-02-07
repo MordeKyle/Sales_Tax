@@ -17,7 +17,10 @@ using System.Windows.Forms;
 //             tax, and the total amount of the purchase.
 //
 //     *Change Log*
-//      01/07/2014
+//     01/07/2014 2
+//      infoLabel added.
+//      fixed tab stops and tab orders.
+//     01/07/2014
 //      calculateButton event handler created;
 //        Exception handler.
 //        Added decimal variables.
@@ -28,7 +31,7 @@ using System.Windows.Forms;
 //        clearing of all labels and textbox added.
 //      exitButton event handler created;
 //        closing of program added.
-//      01/06/2014     
+//     01/06/2014     
 //      Repository Creation.
 //      salePriceTB == Sale Price Text box created.
 //      amountOfPurchase label created.  
