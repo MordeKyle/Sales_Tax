@@ -1,4 +1,6 @@
 //     *Change Log*
+//     02/11/2014 2
+//      changes alignment of the text in the Text Box and Output Labels
 //     02/11/2014
 //      fixed dates in change log.
 //      changed salePriceTB to salePriceTextBox

@@ -51,6 +51,7 @@
             this.salePriceTextBox.Name = "salePriceTextBox";
             this.salePriceTextBox.Size = new System.Drawing.Size(100, 20);
             this.salePriceTextBox.TabIndex = 0;
+            this.salePriceTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.salePriceTextBox.TextChanged += new System.EventHandler(this.salePriceTB_TextChanged);
             // 
             // amountOfPurchaseLabel
@@ -78,6 +79,7 @@
             this.countySalesTaxOutput.Name = "countySalesTaxOutput";
             this.countySalesTaxOutput.Size = new System.Drawing.Size(100, 23);
             this.countySalesTaxOutput.TabIndex = 3;
+            this.countySalesTaxOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.countySalesTaxOutput.Click += new System.EventHandler(this.label2_Click);
             // 
             // stateSalesTaxLabel
@@ -96,6 +98,7 @@
             this.stateSalesTaxOutput.Name = "stateSalesTaxOutput";
             this.stateSalesTaxOutput.Size = new System.Drawing.Size(100, 23);
             this.stateSalesTaxOutput.TabIndex = 5;
+            this.stateSalesTaxOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // totalSalesTaxLabel
             // 
@@ -113,6 +116,7 @@
             this.totalSalesTaxOutput.Name = "totalSalesTaxOutput";
             this.totalSalesTaxOutput.Size = new System.Drawing.Size(100, 23);
             this.totalSalesTaxOutput.TabIndex = 7;
+            this.totalSalesTaxOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // totalOfPurchaseLabel
             // 
@@ -130,6 +134,7 @@
             this.totalOfPurchaseOutput.Name = "totalOfPurchaseOutput";
             this.totalOfPurchaseOutput.Size = new System.Drawing.Size(100, 23);
             this.totalOfPurchaseOutput.TabIndex = 9;
+            this.totalOfPurchaseOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // clearButton
             // 

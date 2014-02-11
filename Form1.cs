@@ -17,6 +17,8 @@ using System.Windows.Forms;
 //             tax, and the total amount of the purchase.
 //
 //     *Change Log*
+//     02/11/2014 2
+//      changes alignment of the text in the Text Box and Output Labels
 //     02/11/2014
 //      fixed dates in change log.
 //      changed salePriceTB to salePriceTextBox
@@ -63,7 +65,7 @@ namespace Sales_Tax
         {
             // salePriceTB is where the user will enter the initial price of a purchase, before any
             // sales tax is applied to the figure. This figure will be called on later in the code
-            // as salePriceTB.Text in order to user the figure the user enters.
+            // as salePriceTextBox.Text in order to user the figure the user enters.
         }
 
         private void label2_Click(object sender, EventArgs e)
