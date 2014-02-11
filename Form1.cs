@@ -17,10 +17,13 @@ using System.Windows.Forms;
 //             tax, and the total amount of the purchase.
 //
 //     *Change Log*
-//     01/07/2014 2
+//     02/11/2014
+//      fixed dates in change log.
+//      changed salePriceTB to salePriceTextBox
+//     02/07/2014 2
 //      infoLabel added.
 //      fixed tab stops and tab orders.
-//     01/07/2014
+//     02/07/2014
 //      calculateButton event handler created;
 //        Exception handler.
 //        Added decimal variables.
@@ -31,7 +34,7 @@ using System.Windows.Forms;
 //        clearing of all labels and textbox added.
 //      exitButton event handler created;
 //        closing of program added.
-//     01/06/2014     
+//     02/06/2014     
 //      Repository Creation.
 //      salePriceTB == Sale Price Text box created.
 //      amountOfPurchase label created.  
@@ -79,7 +82,7 @@ namespace Sales_Tax
                 decimal totalPrice;
 
                 //pulling the user defined data and assigning it to a decimal string:
-                salePrice = decimal.Parse(salePriceTB.Text);
+                salePrice = decimal.Parse(salePriceTextBox.Text);
 
                 //calculations:
                 stateTax = salePrice * STATE_SALES_TAX_PERCENT;
@@ -104,7 +107,7 @@ namespace Sales_Tax
         private void clearButton_Click(object sender, EventArgs e)
         {
             //clearing all of the inputs and outputs:
-            salePriceTB.Text = "";
+            salePriceTextBox.Text = "";
             stateSalesTaxOutput.Text = "";
             countySalesTaxOutput.Text = "";
             totalSalesTaxOutput.Text = "";

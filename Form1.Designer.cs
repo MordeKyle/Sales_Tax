@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
-            this.salePriceTB = new System.Windows.Forms.TextBox();
+            this.salePriceTextBox = new System.Windows.Forms.TextBox();
             this.amountOfPurchaseLabel = new System.Windows.Forms.Label();
             this.countySalesTaxLabel = new System.Windows.Forms.Label();
             this.countySalesTaxOutput = new System.Windows.Forms.Label();
@@ -45,13 +45,13 @@
             this.infoLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // salePriceTB
+            // salePriceTextBox
             // 
-            this.salePriceTB.Location = new System.Drawing.Point(172, 21);
-            this.salePriceTB.Name = "salePriceTB";
-            this.salePriceTB.Size = new System.Drawing.Size(100, 20);
-            this.salePriceTB.TabIndex = 0;
-            this.salePriceTB.TextChanged += new System.EventHandler(this.salePriceTB_TextChanged);
+            this.salePriceTextBox.Location = new System.Drawing.Point(172, 21);
+            this.salePriceTextBox.Name = "salePriceTextBox";
+            this.salePriceTextBox.Size = new System.Drawing.Size(100, 20);
+            this.salePriceTextBox.TabIndex = 0;
+            this.salePriceTextBox.TextChanged += new System.EventHandler(this.salePriceTB_TextChanged);
             // 
             // amountOfPurchaseLabel
             // 
@@ -189,7 +189,7 @@
             this.Controls.Add(this.countySalesTaxOutput);
             this.Controls.Add(this.countySalesTaxLabel);
             this.Controls.Add(this.amountOfPurchaseLabel);
-            this.Controls.Add(this.salePriceTB);
+            this.Controls.Add(this.salePriceTextBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainForm";
             this.Text = "Sales Tax Calculator";
@@ -200,7 +200,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox salePriceTB;
+        private System.Windows.Forms.TextBox salePriceTextBox;
         private System.Windows.Forms.Label amountOfPurchaseLabel;
         private System.Windows.Forms.Label countySalesTaxLabel;
         private System.Windows.Forms.Label countySalesTaxOutput;
