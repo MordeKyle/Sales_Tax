@@ -17,6 +17,8 @@ using System.Windows.Forms;
 //             tax, and the total amount of the purchase.
 //
 //     *Change Log*
+//     02/13/2014 2
+//      fixed catch 
 //     02/13/2014
 //      added some descriptions. 
 //     02/11/2014 2
@@ -103,10 +105,10 @@ namespace Sales_Tax
                 totalOfPurchaseOutput.Text = totalPrice.ToString("c");
 
             }
-            catch
+            catch (Exception ex)
             {
                 //eroor message.
-                MessageBox.Show("Oops, something went wrong.");
+                MessageBox.Show(ex.Message);
 
             }
         }
