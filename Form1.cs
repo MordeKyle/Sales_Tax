@@ -17,6 +17,8 @@ using System.Windows.Forms;
 //             tax, and the total amount of the purchase.
 //
 //     *Change Log*
+//     02/13/2014
+//      added some descriptions. 
 //     02/11/2014 2
 //      changes alignment of the text in the Text Box and Output Labels
 //     02/11/2014
@@ -52,6 +54,7 @@ namespace Sales_Tax
 {
     public partial class mainForm : Form
     {
+        //declare constant values as strings.
         private const decimal STATE_SALES_TAX_PERCENT = 0.04m;
         private const decimal COUNTY_SALES_TAX_PERCENT = 0.02m;
 
@@ -77,6 +80,7 @@ namespace Sales_Tax
         {
             try
             {
+                //declare strings
                 decimal salePrice;
                 decimal stateTax;
                 decimal countyTax;
@@ -101,6 +105,7 @@ namespace Sales_Tax
             }
             catch
             {
+                //eroor message.
                 MessageBox.Show("Oops, something went wrong.");
 
             }
